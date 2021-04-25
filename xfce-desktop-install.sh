@@ -9,6 +9,11 @@ git clone https://aur.archlinux.org/pikaur.git
 cd pikaur/
 makepkg -si --noconfirm 
 
+#git clone https://aur.archlinux.org/yay.git
+#cd yay
+#makepkg -si --noconfirm 
+#yay -S numix-themes-electric
+
 sudo systemctl enable lightdm
 /bin/echo -e "\e[1;34mREBOOTING IN 5..4..3..2..1..\e[0m"
 sleep 5
