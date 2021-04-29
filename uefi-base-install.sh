@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Make sure to partition the disk manually, install pacstrap, text editor, git and enter arch-chroot before running the script.
+# Make sure to partition the disk manually, pacstrap, text editor, git and enter arch-chroot before running the script.
 ln -sf /usr/share/zoneinfo/Asia/Kuala_Lumpur /etc/localtime
 hwclock --systohc
 sed -i '177s/.//' /etc/locale.gen
