@@ -20,10 +20,10 @@ make a usable script without any user interaction, no more typing required.
 ## :pushpin: Usage 
 
 Clone all the script
-`git clone https://github.com/luqmannn/Arch-Linux-Script.git`
+- `git clone https://github.com/luqmannn/Arch-Linux-Script.git`
 
 **:warning: Change the hostname, username, software package and GRUB directory install in the script according to your system**
 
 Make all the script executable and run
-`chmod +x *.sh`
-`./<script_name.sh>`
+- `chmod +x *.sh`
+- `./<script_name.sh>`
