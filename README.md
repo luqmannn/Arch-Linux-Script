@@ -27,3 +27,9 @@ Clone all the script
 Make all the script executable and run
 - `chmod +x *.sh`
 - `./<script_name.sh>`
+
+To enable iptables, use the command below
+- `sudo systemctl enable --now iptables`
+
+To save the configuration make by the ipv4tables script, use the command below
+- `sudo iptables-save -f /etc/iptables/iptables.rules`
