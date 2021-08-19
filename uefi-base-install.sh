@@ -6,17 +6,17 @@ hwclock --systohc
 sed -i '177s/.//' /etc/locale.gen
 locale-gen
 echo "LANG=en_US.UTF-8" >> /etc/locale.conf
-echo "archfyp" >> /etc/hostname
+echo "archminimal" >> /etc/hostname
 echo "127.0.0.1 localhost" >> /etc/hosts
-echo "::1 localhost" >> /etc/hosts
-echo "127.0.1.1 arcfyp.localdomain archfyp" >> /etc/hosts
+echo "::1       localhost" >> /etc/hosts
+echo "127.0.1.1 archminimal.localdomain archminimal" >> /etc/hosts
 echo root:password | chpasswd
 
 # Change the software package based on what you need.
-pacman -S --noconfirm grub efibootmgr networkmanager network-manager-applet xdg-user-dirs xdg-utils dialog wpa_supplicant linux-zen-headers ntfs-3g terminus-font os-prober alsa-utils pulseaudio inetutils vim
+pacman -S --noconfirm grub efibootmgr networkmanager network-manager-applet xdg-user-dirs xdg-utils dialog wpa_supplicant linux-lts-headers ntfs-3g terminus-font os-prober alsa-utils pulseaudio inetutils
 
 # For AMD graphic card
-pacman -S --noconfirm xf86-video-amdgpu mesa vulkan-radeon
+# pacman -S --noconfirm xf86-video-amdgpu mesa vulkan-radeon
 # For Nvidia graphic card
 # pacman -S --noconfirm nvidia nvidia-utils nvidia-settings
 
